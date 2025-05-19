@@ -9,7 +9,15 @@
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #f9fafc;
+  }
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   #hero {
     background-image: url('hero.jpg');
@@ -18,6 +26,9 @@
     color: white;
     padding: 120px 20px;
     text-align: center;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
   }
   #hero h1 {
     font-size: 2.5em;
@@ -42,14 +53,6 @@
   }
   #hero button:hover {
     background-color: #ffcc00;
-  }
-  #course {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-  #course h2 {
-    text-align: center;
-    margin-bottom: 30px;
   }
   .timeline {
     position: relative;
@@ -94,14 +97,6 @@
     margin: 0;
     font-size: 0.95em;
   }
-  #includes {
-    padding: 40px 20px;
-    background-color: #f0f8ff;
-    text-align: center;
-  }
-  #includes h2 {
-    margin-bottom: 30px;
-  }
   .item-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -126,7 +121,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero Section -->
   <section id="hero">
     <h1>특별 프로그램: 무릉도원의 비밀</h1>
     <p>실제 전설이 살아 숨 쉬는 울릉도에서 펼쳐지는 스토리 기반 야외 방탈출! 석인을 봉인하고 평화로운 울릉도를 지켜</p>
