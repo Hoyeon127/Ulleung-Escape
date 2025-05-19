@@ -94,6 +94,31 @@
     margin: 0;
     font-size: 0.95em;
   }
+  #includes {
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  #includes h2 {
+    margin-bottom: 30px;
+  }
+  .item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .item-box {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .item-box p {
+    margin: 0;
+    font-weight: 500;
+  }
   </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -150,7 +175,55 @@
   </section>
 
   <!-- Includes -->
-  <!-- 이하 생략 (기존 코드 유지) -->
+  <section id="includes">
+    <h2>구성품 안내</h2>
+    <div class="item-grid">
+      <div class="item-box"><p>무릉의 지도 (미션 지점 표시)</p></div>
+      <div class="item-box"><p>계시의 편지 (스토리 안내)</p></div>
+      <div class="item-box"><p>조각 카드 (미션 단서)</p></div>
+      <div class="item-box"><p>QR 미션 카드</p></div>
+      <div class="item-box"><p>석인 봉인 스티커</p></div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section id="info">
+    <h2>차별화 포인트</h2>
+    <p>✅ 실제 설화를 기반으로 한 스토리텔링형 방탈출</p>
+    <p>✅ 성인봉, 도동항 등 실제 명소와 연계</p>
+    <p>✅ 앱 + 오프라인 키트 조합으로 몰입감 극대화</p>
+    <p>✅ 울릉도의 전설과 지형을 활용한 로컬 콘텐츠</p>
+  </section>
+
+<!-- Guide -->
+  <section id="Guide">
+    <h2>예약/참여 방</h2>
+    <p>사전 예약 후 키트 수령 (도동항 or 카페에서 수령)</p>
+    <p>앱/웹앱 로그인으로 진행</p>
+    <p>종료 후 성인봉 봉인 인증하면 완수 뱃지 + 기념품 증정</p>
+  </section>
+  
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>자주 물어보는 질문</h2>
+    <ul>
+      <li>혼자도 참여가능할까요?</li>
+      <li>팀을 구성해주시나요?</li>
+      <li>반려동물과 함께 진행도 가능한가요?</li>
+      <li>날씨 무관하게 진행되나요?</li>
+    </ul>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation">
+    <h2>예약 안내</h2>
+    <p>가격: 인원당 XX,000원</p>
+    <p>타임: 1.5~2시간</p>
+    <button>예약하기</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>문의: escape@ulleungdo.kr | 인스타그램 @ulleung_escape</p>
 </body>
 </html>
-
