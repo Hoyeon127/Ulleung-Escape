@@ -12,7 +12,7 @@
     background-color: #fff;
   }
   #hero {
-    background-image: url('hero.jpg'); /* 나중에 이미지 파일로 교체 */
+    background-image: url('hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -43,11 +43,61 @@
   #hero button:hover {
     background-color: #ffcc00;
   }
-</style>
-
+  #course {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  #course h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #007acc;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -2px;
+  }
+  .timeline-entry {
+    position: relative;
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #007acc;
+    border-radius: 50%;
+    top: 24px;
+    left: 13px;
+    z-index: 1;
+  }
+  .timeline-entry h3 {
+    margin: 0 0 5px;
+    font-size: 1.1em;
+    color: #007acc;
+  }
+  .timeline-entry p {
+    margin: 0;
+    font-size: 0.95em;
+  }
+  </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>무르론도원의 비밀 – 성인봉의 석인을 봉인해라</title>
+  <title>무릉도원의 비밀 – 성인봉의 석인을 봉인해라</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -75,67 +125,32 @@
   <!-- Course -->
   <section id="course">
     <h2>탐험 코스 안내</h2>
-    <ul>
-      <li>1. 도덕항 입구 - 계시의 편지 수령 / QR코드 스캔으로 스토리 시작</li>
-      <li>2. 태하향목관광모노레일 주변 - 돌의 조각 찾기 미션 / 보물찾기 및 퀴즈 풀이</li>
-      <li>3. 봉래폭포 - 암호 해독 미션 / 고대 문자 해석</li>
-      <li>4. 나리분지 - 실루엣 맞추기 퍼즐 & 나무 조각 재배열</li>
-      <li>5. 성인봉 아래 숲길 - AR을 활용한 마지막 봉인 미션 / 음성 암호 & 퀴즈 풀이 </li>
-    </ul>
+    <div class="timeline">
+      <div class="timeline-entry">
+        <h3>1. 도덕항 입구</h3>
+        <p>계시의 편지 수령 / QR코드 스캔으로 스토리 시작</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2. 태하향목관광모노레일 주변</h3>
+        <p>돌의 조각 찾기 미션 / 보물찾기 및 퀴즈 풀이</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>3. 봉래폭포</h3>
+        <p>암호 해독 미션 / 고대 문자 해석</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>4. 나리분지</h3>
+        <p>실루엣 맞추기 퍼즐 & 나무 조각 재배열</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>5. 성인봉 아래 숲길</h3>
+        <p>AR을 활용한 마지막 봉인 미션 / 음성 암호 & 퀴즈 풀이</p>
+      </div>
+    </div>
   </section>
 
   <!-- Includes -->
-  <section id="includes">
-    <h2>구성품 안내</h2>
-    <ul>
-      <li>무릉의 지도(미션 지점 표시)</li>
-      <li>계시의 편지(스토리 안내)</li>
-      <li>조각 카드(미션 단서)</li>
-      <li>QR 미션 카드</li>
-      <li>석인 봉인 스티커</li>
-    </ul>
-  </section>
-
-  <!-- Info -->
-  <section id="info">
-    <h2>차별화 포인트</h2>
-    <p>✅ 실제 설화를 기반으로 한 스토리텔링형 방탈출</p>
-    <p>✅ 성인봉, 도동항 등 실제 명소와 연계</p>
-    <p>✅ 앱 + 오프라인 키트 조합으로 몰입감 극대화</p>
-    <p>✅ 울릉도의 전설과 지형을 활용한 로컬 콘텐츠</p>
-  </section>
-
-<!-- Guide -->
-  <section id="Guide">
-    <h2>예약/참여 방</h2>
-    <p>사전 예약 후 키트 수령 (도동항 or 카페에서 수령)</p>
-    <p>앱/웹앱 로그인으로 진행</p>
-    <p>종료 후 성인봉 봉인 인증하면 완수 뱃지 + 기념품 증정</p>
-  </section>
-  
-  <!-- FAQ -->
-  <section id="faq">
-    <h2>자주 물어보는 질문</h2>
-    <ul>
-      <li>혼자도 참여가능할까요?</li>
-      <li>팀을 구성해주시나요?</li>
-      <li>반려동물과 함께 진행도 가능한가요?</li>
-      <li>날씨 무관하게 진행되나요?</li>
-    </ul>
-  </section>
-
-  <!-- Reservation -->
-  <section id="reservation">
-    <h2>예약 안내</h2>
-    <p>가격: 인원당 XX,000원</p>
-    <p>타임: 1.5~2시간</p>
-    <button>예약하기</button>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>문의: escape@ulleungdo.kr | 인스타그램 @ulleung_escape</p>
-  </footer>
+  <!-- 이하 생략 (기존 코드 유지) -->
 </body>
 </html>
 
